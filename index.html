@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Santa Maria del Bosco — Equestrian Estate near Milan | FR International Realty</title>
+<meta name="description" content="A 16th-century equestrian estate of 45 hectares within the Ticino Natural Park, thirty minutes from Milan. Stabling for eighty horses, a historic farmstead and forty residences to renovate and make your own. For sale through FR International Realty." />
+
+<!-- Social sharing (set the absolute URL once your domain is live) -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Santa Maria del Bosco — A 16th-century equestrian estate near Milan" />
+<meta property="og:description" content="Forty-five hectares within the protected Ticino Park, thirty minutes from Milan. Stabling for eighty, a historic farmstead, and forty residences to renovate." />
+<meta property="og:image" content="assets/aerial-hero.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet" />
+
+<style>
+  :root{
+    --paper:#F4EFE4;        /* warm ivory */
+    --panel:#ECE3D1;        /* deeper cream */
+    --ink:#29251F;          /* warm near-black */
+    --stone:#6E6557;        /* secondary text */
+    --gold:#A8893E;         /* antique brass */
+    --gold-soft:#CDAA5E;    /* lit gold */
+    --line:rgba(41,37,31,.16);
+    --maxw:1180px;
+    --display:'Fraunces', Georgia, serif;
+    --body:'DM Sans', system-ui, sans-serif;
+  }
+
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0; background:var(--paper); color:var(--ink);
+    font-family:var(--body); font-weight:400; line-height:1.65;
+    -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+  }
+  img{display:block; max-width:100%}
+  a{color:inherit}
+
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 28px}
+
+  /* ---- shared type ---- */
+  .eyebrow{
+    font-family:var(--body); font-weight:500;
+    font-size:.72rem; letter-spacing:.28em; text-transform:uppercase;
+    color:var(--gold); margin:0 0 1.1rem;
+  }
+  h1,h2,h3{font-family:var(--display); font-weight:400; margin:0; line-height:1.08}
+  .lead{font-family:var(--display); font-weight:300;
+    font-size:clamp(1.5rem,3.4vw,2.3rem); line-height:1.32; letter-spacing:-.01em}
+  p{margin:0 0 1.1rem}
+  .muted{color:var(--stone)}
+  .rule{width:54px; height:1px; background:var(--gold); margin:0 0 1.6rem}
+
+  /* ---- header ---- */
+  header{
+    position:fixed; top:0; left:0; right:0; z-index:50;
+    display:flex; align-items:center; justify-content:space-between;
+    padding:18px 28px; transition:background .4s ease, box-shadow .4s ease, padding .4s ease;
+    color:#fff;
+  }
+  header.solid{background:rgba(244,239,228,.92); backdrop-filter:blur(8px);
+    color:var(--ink); box-shadow:0 1px 0 var(--line); padding:12px 28px}
+  .brand{font-family:var(--display); font-size:1rem; letter-spacing:.04em}
+  .brand b{font-weight:500}
+  .tag{font-size:.66rem; letter-spacing:.24em; text-transform:uppercase; opacity:.85}
+
+  /* ---- hero ---- */
+  .hero{position:relative; min-height:100svh; display:flex; align-items:flex-end;
+    color:#fff; overflow:hidden}
+  .hero img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover}
+  .hero::after{content:""; position:absolute; inset:0;
+    background:linear-gradient(180deg, rgba(20,17,12,.34) 0%, rgba(20,17,12,0) 32%, rgba(20,17,12,.12) 60%, rgba(20,17,12,.74) 100%)}
+  .hero .wrap{position:relative; z-index:2; width:100%; padding-bottom:64px}
+  .hero .eyebrow{color:var(--gold-soft)}
+  .hero h1{font-size:clamp(3rem,9vw,7rem); font-weight:400; letter-spacing:-.02em;
+    text-shadow:0 2px 30px rgba(0,0,0,.35)}
+  .hero h1 em{font-style:italic; font-weight:300}
+  .hero .sub{max-width:46ch; margin-top:1.2rem; font-size:clamp(1rem,1.6vw,1.18rem);
+    color:rgba(255,255,255,.92)}
+  .scrollcue{position:absolute; bottom:26px; left:50%; transform:translateX(-50%);
+    z-index:2; font-size:.62rem; letter-spacing:.26em; text-transform:uppercase;
+    color:rgba(255,255,255,.8); display:flex; flex-direction:column; align-items:center; gap:8px}
+  .scrollcue span{width:1px; height:34px; background:rgba(255,255,255,.55);
+    animation:cue 2.4s ease-in-out infinite}
+  @keyframes cue{0%,100%{transform:scaleY(.4); opacity:.4} 50%{transform:scaleY(1); opacity:1}}
+
+  /* ---- sections ---- */
+  section{padding:clamp(64px,10vw,128px) 0}
+  .center{text-align:center}
+  .center .rule{margin-left:auto; margin-right:auto}
+  h2.title{font-size:clamp(2rem,4.4vw,3.1rem); letter-spacing:-.015em}
+
+  .lede-sec .lead{max-width:24ch}
+  .lede-sec .body{max-width:52ch; margin-top:2rem; color:var(--stone); font-size:1.05rem}
+
+  /* stats */
+  .stats{background:var(--ink); color:var(--paper)}
+  .stats .grid{display:grid; grid-template-columns:repeat(6,1fr); gap:1px;
+    background:rgba(244,239,228,.14)}
+  .stat{background:var(--ink); padding:38px 18px; text-align:center}
+  .stat .n{font-family:var(--display); font-weight:400; font-size:clamp(2rem,3.6vw,2.9rem);
+    color:var(--gold-soft); line-height:1}
+  .stat .l{font-size:.7rem; letter-spacing:.16em; text-transform:uppercase;
+    color:rgba(244,239,228,.66); margin-top:.7rem}
+
+  /* split feature */
+  .split{display:grid; grid-template-columns:1fr 1fr; gap:clamp(32px,5vw,76px); align-items:center}
+  .split.flip .txt{order:2}
+  .split figure{margin:0}
+  .split figure img{width:100%; height:100%; object-fit:cover; border-radius:2px}
+  figcaption{font-size:.72rem; letter-spacing:.12em; text-transform:uppercase;
+    color:var(--stone); margin-top:.8rem}
+
+  /* full-bleed image */
+  .bleed{width:100%; height:clamp(320px,56vw,640px); object-fit:cover}
+  .bleed-cap{ text-align:center; font-size:.72rem; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--stone); padding:14px 0 0}
+
+  /* timeline */
+  .timeline{background:var(--panel)}
+  .tl{max-width:760px; margin:0 auto; position:relative}
+  .tl::before{content:""; position:absolute; left:0; top:6px; bottom:6px; width:1px; background:var(--gold)}
+  .tl-item{position:relative; padding:0 0 2.6rem 38px}
+  .tl-item:last-child{padding-bottom:0}
+  .tl-item::before{content:""; position:absolute; left:-4px; top:7px; width:9px; height:9px;
+    border-radius:50%; background:var(--gold)}
+  .tl-era{font-family:var(--body); font-weight:500; font-size:.72rem; letter-spacing:.2em;
+    text-transform:uppercase; color:var(--gold); margin-bottom:.3rem}
+  .tl-h{font-family:var(--display); font-size:1.5rem; margin-bottom:.5rem}
+  .tl-item p{color:var(--stone); margin:0; font-size:.98rem}
+
+  /* uses */
+  .uses{display:grid; grid-template-columns:repeat(2,1fr); gap:1px; background:var(--line);
+    border:1px solid var(--line)}
+  .use{background:var(--paper); padding:34px}
+  .use .k{font-family:var(--display); font-size:1.35rem; margin-bottom:.5rem}
+  .use p{color:var(--stone); margin:0; font-size:.96rem}
+  .dev-note{margin-top:1.8rem; font-size:.92rem; color:var(--stone); font-style:italic}
+
+  /* estate plan */
+  .plan-fig{background:var(--paper); border:1px solid var(--line); padding:clamp(18px,3vw,34px); border-radius:2px}
+  .plan-fig img{margin:0 auto}
+
+  /* gallery */
+  .gal{display:grid; grid-template-columns:repeat(3,1fr); gap:14px}
+  .gal img{width:100%; aspect-ratio:3/2; object-fit:cover; border-radius:2px}
+  .gal .tall{grid-row:span 2; aspect-ratio:auto; height:100%}
+
+  /* location */
+  .loc{display:grid; grid-template-columns:1.1fr 1fr; gap:clamp(28px,5vw,68px); align-items:center}
+  .loc .facts{list-style:none; margin:1.4rem 0 0; padding:0}
+  .loc .facts li{padding:14px 0; border-top:1px solid var(--line); display:flex;
+    justify-content:space-between; gap:18px; font-size:.95rem}
+  .loc .facts li span:first-child{color:var(--stone)}
+  .loc .facts li:last-child{border-bottom:1px solid var(--line)}
+
+  /* contact */
+  .contact{background:var(--ink); color:var(--paper); text-align:center}
+  .contact h2{color:var(--paper)}
+  .contact .eyebrow{color:var(--gold-soft)}
+  .contact .lead{color:var(--paper); max-width:30ch; margin:0 auto 2.4rem}
+  .cta-row{display:flex; gap:14px; justify-content:center; flex-wrap:wrap; margin-top:.5rem}
+  .btn{display:inline-block; font-family:var(--body); font-weight:500; font-size:.82rem;
+    letter-spacing:.12em; text-transform:uppercase; text-decoration:none;
+    padding:15px 30px; border-radius:2px; transition:transform .2s ease, background .2s ease, color .2s ease}
+  .btn-gold{background:var(--gold-soft); color:var(--ink)}
+  .btn-gold:hover{background:#fff; transform:translateY(-2px)}
+  .btn-ghost{border:1px solid rgba(244,239,228,.4); color:var(--paper)}
+  .btn-ghost:hover{border-color:var(--gold-soft); color:var(--gold-soft); transform:translateY(-2px)}
+  .agent{margin-top:3rem; font-size:.95rem; color:rgba(244,239,228,.82); line-height:1.9}
+  .agent strong{font-family:var(--display); font-weight:500; font-size:1.15rem; color:var(--paper)}
+
+  footer{background:#1F1C17; color:rgba(244,239,228,.6); font-size:.78rem; padding:46px 0}
+  footer .wrap{display:flex; justify-content:space-between; gap:24px; flex-wrap:wrap; align-items:center}
+  footer a{color:rgba(244,239,228,.78); text-decoration:none}
+  footer .disc{max-width:60ch; line-height:1.6; color:rgba(244,239,228,.42)}
+
+  /* reveal */
+  .reveal{opacity:0; transform:translateY(22px); transition:opacity .8s ease, transform .8s ease}
+  .reveal.in{opacity:1; transform:none}
+
+  /* responsive */
+  @media (max-width:860px){
+    .stats .grid{grid-template-columns:repeat(3,1fr)}
+    .split{grid-template-columns:1fr; gap:24px}
+    .split.flip .txt{order:0}
+    .uses{grid-template-columns:1fr}
+    .loc{grid-template-columns:1fr}
+    .gal{grid-template-columns:repeat(2,1fr)}
+    .gal .tall{grid-row:auto; height:auto; aspect-ratio:3/2}
+    .tag{display:none}
+  }
+  @media (max-width:480px){
+    .stats .grid{grid-template-columns:repeat(2,1fr)}
+    .wrap{padding:0 20px}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *{animation:none !important}
+    .reveal{opacity:1; transform:none; transition:none}
+    html{scroll-behavior:auto}
+  }
+  :focus-visible{outline:2px solid var(--gold); outline-offset:3px}
+</style>
+</head>
+<body>
+
+<header id="hdr">
+  <div class="brand"><b>Santa Maria del Bosco</b></div>
+  <div class="tag">FR International Realty</div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <img src="assets/aerial-hero.jpg" alt="Aerial view of the Santa Maria del Bosco estate within the Ticino Park" />
+  <div class="wrap">
+    <p class="eyebrow">Estate for sale · Parco del Ticino, Milan</p>
+    <h1>Santa Maria<br><em>del Bosco</em></h1>
+    <p class="sub">A sixteenth-century equestrian estate of forty-five hectares, immersed in the protected Ticino Natural Park — thirty minutes from the centre of Milan.</p>
+  </div>
+  <div class="scrollcue">Scroll<span></span></div>
+</section>
+
+<!-- LEDE -->
+<section class="lede-sec">
+  <div class="wrap center reveal">
+    <p class="lead">From the sixteenth century to today — an estate where time has stood still, at the gates of Milan.</p>
+    <p class="body">One of Lombardy's oldest agricultural estates, set within one of Italy's great river parks. Forty-five hectares of level meadow, a historic farmstead and a complete equestrian quarter — its buildings offered to be renovated and shaped to the new owner's own vision.</p>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats" style="padding:0">
+  <div class="grid">
+    <div class="stat reveal"><div class="n">45</div><div class="l">Hectares</div></div>
+    <div class="stat reveal"><div class="n">6,500</div><div class="l">m² of buildings</div></div>
+    <div class="stat reveal"><div class="n">40</div><div class="l">Residences</div></div>
+    <div class="stat reveal"><div class="n">80</div><div class="l">Stable boxes</div></div>
+    <div class="stat reveal"><div class="n">9</div><div class="l">Tack rooms</div></div>
+    <div class="stat reveal"><div class="n">30′</div><div class="l">To Milan</div></div>
+  </div>
+</section>
+
+<!-- THE ESTATE -->
+<section>
+  <div class="wrap">
+    <div class="split reveal">
+      <div class="txt">
+        <p class="eyebrow">The estate</p>
+        <div class="rule"></div>
+        <h2 class="title">An oasis of forty-five hectares</h2>
+        <p class="muted" style="margin-top:1.6rem">Beyond the residences lie private roads, gardens, parking and a keeper's house. Beside the deconsecrated chapel, a small lake among bamboo and great carp composes its own quiet from the sound of water and wind.</p>
+        <p class="muted">The grounds leave ample room for tennis courts, swimming pools and gardens — the rare luxury of space, fifteen minutes from the ring road of a European capital.</p>
+        <p class="muted">The buildings are offered to be renovated and configured to your own brief — a private residence, a stud farm, a relais or a hospitality project — with scope to expand the existing footprint.</p>
+      </div>
+      <figure>
+        <img src="assets/courtyard-residence.jpg" alt="Inner courtyard of the restored residences" />
+        <figcaption>The residential courtyard</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- full bleed avenue -->
+<figure style="margin:0">
+  <img class="bleed reveal" src="assets/avenue.jpg" alt="The tree-lined avenue leading through the estate" />
+  <p class="bleed-cap">The tree-lined approach</p>
+</figure>
+
+<!-- EQUESTRIAN -->
+<section>
+  <div class="wrap">
+    <div class="split flip reveal">
+      <div class="txt">
+        <p class="eyebrow">Equestrian heritage</p>
+        <div class="rule"></div>
+        <h2 class="title">Built for horses</h2>
+        <p class="muted" style="margin-top:1.6rem">Above all, Santa Maria del Bosco was built for the horse. Stabling for eighty, nine tack rooms, a veterinary clinic, a farriery, a competition arena, training tracks, free-galloping paddocks and a one-kilometre straight.</p>
+        <p class="muted">This is where <em>Molvedo</em> was foaled — son of the legendary <em>Ribot</em>. The infrastructure remains, ready to return a stud farm or competition centre to its vocation.</p>
+      </div>
+      <figure>
+        <img src="assets/stables.jpg" alt="The long stable buildings of the estate" />
+        <figcaption>The stables</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section class="timeline">
+  <div class="wrap">
+    <div class="center reveal" style="margin-bottom:3.4rem">
+      <p class="eyebrow">Five centuries</p>
+      <div class="rule"></div>
+      <h2 class="title">A past that looks to the future</h2>
+    </div>
+    <div class="tl reveal">
+      <div class="tl-item">
+        <div class="tl-era">16th century</div>
+        <h3 class="tl-h">Around the chapel</h3>
+        <p>The estate grows around the sixteenth-century church of Santa Maria del Bosco, of Leonardesque school, facing the road to the north. By local tradition, the wife of Duke Galeazzo Maria Sforza walked these meadows and took in the poetry of the countryside.</p>
+      </div>
+      <div class="tl-item">
+        <div class="tl-era">17th–18th century</div>
+        <h3 class="tl-h">The farmstead</h3>
+        <p>The original nucleus of the cascina takes shape — a characteristic example of the region's rural architecture, recorded in the Teresian land cadastre in the form it keeps today.</p>
+      </div>
+      <div class="tl-item">
+        <div class="tl-era">18th–19th century</div>
+        <h3 class="tl-h">Santa Maria di Sotto</h3>
+        <p>A second farmstead is added to the south, articulated around two courtyards — one ringed by the residences, the other given to farming. The estate assumes its present form.</p>
+      </div>
+      <div class="tl-item">
+        <div class="tl-era">1990s</div>
+        <h3 class="tl-h">Revisited</h3>
+        <p>The estate is revisited with discretion, consolidating the complex while preserving its rural character and its origins.</p>
+      </div>
+      <div class="tl-item">
+        <div class="tl-era">Today</div>
+        <h3 class="tl-h">A canvas for its next life</h3>
+        <p>Catalogued in the regional inventory of architectural and environmental heritage (SIRBeC, Regione Lombardia) and set within the Ticino Natural Park, the buildings are offered to be renovated and tailored to the new owner — with room to expand.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- chapel feature -->
+<section>
+  <div class="wrap">
+    <div class="split reveal">
+      <figure>
+        <img src="assets/chapel-facade.jpg" alt="The deconsecrated chapel of Santa Maria del Bosco" />
+        <figcaption>The chapel that names the estate</figcaption>
+      </figure>
+      <div class="txt">
+        <p class="eyebrow">The heart of the estate</p>
+        <div class="rule"></div>
+        <h2 class="title">The Leonardesque chapel</h2>
+        <p class="muted" style="margin-top:1.6rem">Now deconsecrated, the chapel is the origin around which the whole estate was composed. With the courtyards, the lake and the avenue of poplars, it forms a setting of rare cinematic quality.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ESTATE PLAN -->
+<section class="timeline">
+  <div class="wrap">
+    <div class="center reveal" style="margin-bottom:2.6rem">
+      <p class="eyebrow">The complex</p>
+      <div class="rule"></div>
+      <h2 class="title">Eight quarters, one estate</h2>
+    </div>
+    <div class="plan-fig reveal">
+      <img src="assets/estate-plan.jpg" alt="Illustrated plan of the estate showing residences, stables and amenities" />
+    </div>
+    <p class="muted center reveal" style="max-width:60ch; margin:1.8rem auto 0; font-size:.96rem">
+      Four named residences — <em>Gli Aceri, I Tigli, Le Albizie, I Ciliegi</em> — alongside the club house, the stables and tack rooms, a veterinary clinic, management offices and restaurant, staff lodgings, a training track and a competition field with its own lake.
+    </p>
+  </div>
+</section>
+
+<!-- USES -->
+<section>
+  <div class="wrap">
+    <div class="center reveal" style="margin-bottom:3rem">
+      <p class="eyebrow">Possibility</p>
+      <div class="rule"></div>
+      <h2 class="title">One estate, many vocations</h2>
+    </div>
+    <div class="uses reveal">
+      <div class="use"><div class="k">Equestrian centre &amp; stud farm</div><p>Its built vocation — eighty boxes, clinic, arena and tracks ready to return to use.</p></div>
+      <div class="use"><div class="k">Country resort or relais</div><p>Forty residences, restaurant, lake and grounds within a protected park, half an hour from Milan.</p></div>
+      <div class="use"><div class="k">Events &amp; film location</div><p>The chapel, courtyards and avenues form a natural set for weddings, productions and gatherings.</p></div>
+      <div class="use"><div class="k">Working agricultural estate</div><p>An established <em>azienda agricola</em> of forty-five hectares with hospitality, inside the Ticino Park.</p></div>
+    </div>
+    <p class="dev-note center reveal">Development potential — a significant volumetric increase is under discussion with the Municipality of Ozzero. Details available to qualified parties on request.</p>
+  </div>
+</section>
+
+<!-- gallery -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="gal reveal">
+      <img class="tall" src="assets/chapel-approach.jpg" alt="The chapel seen across the meadows and canal" />
+      <img src="assets/lake.jpg" alt="The estate's lake" />
+      <img src="assets/courtyard-stables.jpg" alt="Courtyard with stable portico" />
+      <img src="assets/bamboo.jpg" alt="Bamboo on the lake" />
+      <img src="assets/portico.jpg" alt="View from beneath the portico" />
+      <img src="assets/canal.jpg" alt="Canal and path through the surrounding fields" />
+      <img src="assets/planter.jpg" alt="Terracotta detail in the courtyard" />
+      <img src="assets/meadow.jpg" alt="Open meadow within the estate grounds" />
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section class="timeline">
+  <div class="wrap">
+    <div class="loc reveal">
+      <div>
+        <p class="eyebrow">Location</p>
+        <div class="rule"></div>
+        <h2 class="title">Ozzero, Milan</h2>
+        <p class="muted" style="margin-top:1.6rem">Set within the Ticino Natural Park, on the plain south-west of Milan near Abbiategrasso — open countryside that remains, remarkably, within half an hour of the city and both its airports.</p>
+        <ul class="facts">
+          <li><span>Region</span><span>Lombardy, Italy</span></li>
+          <li><span>Setting</span><span>Parco Naturale del Ticino</span></li>
+          <li><span>To central Milan</span><span>≈ 30 minutes</span></li>
+          <li><span>Airports</span><span>Linate · Malpensa</span></li>
+          <li><span>Tenure</span><span>Private freehold</span></li>
+        </ul>
+      </div>
+      <figure>
+        <img src="assets/chapel-trees.jpg" alt="The chapel among the trees of the estate" style="width:100%; border-radius:2px" />
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="wrap reveal">
+    <p class="eyebrow">Private sale</p>
+    <h2 class="title">Viewings by appointment</h2>
+    <p class="lead" style="margin-top:1.4rem">A property of this rarity is presented privately, to qualified parties.</p>
+    <div class="cta-row">
+      <a class="btn btn-gold" href="mailto:russo@studiorusso.net?subject=Santa%20Maria%20del%20Bosco%20%E2%80%94%20Enquiry">Request the dossier</a>
+      <a class="btn btn-ghost" href="https://wa.me/393477881500" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+    <div class="agent">
+      <strong>Francesco Russo</strong><br>
+      FR International Realty<br>
+      +39 347 788 1500 · <a href="mailto:russo@studiorusso.net">russo@studiorusso.net</a><br>
+      <a href="https://www.studiorusso.net" target="_blank" rel="noopener">studiorusso.net</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>© 2026 FR International Realty — Santa Maria del Bosco, Ozzero (MI)</div>
+    <div class="disc">Particulars are provided for guidance only and do not constitute, nor form part of, an offer or contract. Measurements are approximate. Images remain the property of their respective owners.</div>
+  </div>
+</footer>
+
+<script>
+  // header background on scroll
+  const hdr=document.getElementById('hdr');
+  const onScroll=()=>hdr.classList.toggle('solid', window.scrollY>40);
+  onScroll(); window.addEventListener('scroll', onScroll, {passive:true});
+
+  // scroll reveal
+  const els=document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    const io=new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+    },{threshold:.12, rootMargin:'0px 0px -8% 0px'});
+    els.forEach(el=>io.observe(el));
+  } else { els.forEach(el=>el.classList.add('in')); }
+</script>
+</body>
+</html>
